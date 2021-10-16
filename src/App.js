@@ -37,7 +37,8 @@ class App extends Component {
           top: document.documentElement.scrollHeight,
           behavior: "smooth",
         });
-      });
+      })
+      .catch((error) => console.log(error));
   };
 
   onQueryUpdate = (searchQuery) => {
